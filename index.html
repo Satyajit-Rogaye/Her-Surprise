@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Little Love Story ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <section class="screen hero" id="home">
+    <div class="hero-glow"></div>
+    <div class="gift-wrap" id="giftWrap">
+      <div class="gift-lid"></div>
+      <div class="gift-box">
+        <div class="ribbon-v"></div>
+        <div class="ribbon-h"></div>
+      </div>
+      <div class="gift-bow"><span></span><span></span></div>
+    </div>
+    <p class="eyebrow">A tiny surprise made with love</p>
+    <h1>For <span id="nameHero">My Favorite Person</span> ❤️</h1>
+    <p class="sub">There is something I made just for you...</p>
+    <button class="primary-btn" id="openGift">Open My Gift ✨</button>
+  </section>
+
+  <section class="screen flower-screen hidden" id="flowers">
+    <div class="stars"></div>
+    <div class="flower-scene">
+      <div class="stem"></div>
+      <div class="leaf leaf1"></div>
+      <div class="leaf leaf2"></div>
+      <div class="flower">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+        <b></b>
+      </div>
+    </div>
+    <p class="eyebrow">Some things take time to bloom</p>
+    <h2>Just like our story... 🌸</h2>
+    <p class="sub">And somehow, every day with you feels a little more beautiful.</p>
+    <button class="primary-btn" id="continueFlower">Continue ❤️</button>
+  </section>
+
+  <section class="screen quote-screen hidden" id="quote">
+    <div class="quote-card">
+      <span class="quote-mark">“</span>
+      <p id="quoteText">In a world full of temporary things, you became my favorite forever.</p>
+      <span class="quote-mark end">”</span>
+    </div>
+    <p class="small-note">One more little surprise is waiting...</p>
+    <button class="primary-btn" id="continueQuote">Keep going 💗</button>
+  </section>
+
+  <section class="screen lock-screen hidden" id="lock">
+    <div class="lock-icon">🔐</div>
+    <h2>A secret just for you</h2>
+    <p class="sub">Enter our special 4-digit code.</p>
+    <div class="pin-dots" id="pinDots"><span></span><span></span><span></span><span></span></div>
+    <div class="keypad">
+      <button data-key="1">1</button><button data-key="2">2</button><button data-key="3">3</button>
+      <button data-key="4">4</button><button data-key="5">5</button><button data-key="6">6</button>
+      <button data-key="7">7</button><button data-key="8">8</button><button data-key="9">9</button>
+      <button class="empty"></button><button data-key="0">0</button><button data-key="back">⌫</button>
+    </div>
+    <p class="hint">Hint: <span id="hint">our special date</span></p>
+    <p class="error" id="pinError"></p>
+  </section>
+
+  <section class="screen loading-screen hidden" id="loading">
+    <div class="loader-heart">♥</div>
+    <h2>Opening our memories...</h2>
+    <div class="progress"><span id="progressBar"></span></div>
+    <p id="loadingText">Collecting little moments...</p>
+  </section>
+
+  <section class="screen gallery-screen hidden" id="gallery">
+    <div class="section-head">
+      <p class="eyebrow">Our memories</p>
+      <h2>Little moments, <span>big feelings.</span> 📸</h2>
+      <p>Every picture has a story. Every story has you.</p>
+    </div>
+    <div class="gallery" id="galleryGrid"></div>
+    <button class="primary-btn" id="continueGallery">There is a letter for you 💌</button>
+  </section>
+
+  <section class="screen letter-screen hidden" id="letter">
+    <div class="paper">
+      <div class="paper-tape"></div>
+      <p class="letter-date" id="letterDate"></p>
+      <p class="hand">My Dearest,</p>
+      <h2>To the person who makes my world softer ❤️</h2>
+      <div class="letter-body">
+        <p>I don't know if words will ever be enough to explain what you mean to me, but I want to try.</p>
+        <p>Thank you for every smile, every conversation, every silly moment and every memory we've created. Somehow, the ordinary moments become my favorite ones when you're there.</p>
+        <p>If I could keep one thing forever, it wouldn't be a photograph. It would be the feeling of being with you — laughing, talking, dreaming, and simply knowing that you're beside me.</p>
+        <p>Whatever comes next, I hope we keep choosing each other, one little moment at a time.</p>
+        <p class="hand sign">Always yours,<br><span id="signature">❤️ Me</span></p>
+      </div>
+    </div>
+    <button class="primary-btn" id="finalBtn">One last surprise ✨</button>
+  </section>
+
+  <section class="screen final-screen hidden" id="final">
+    <div class="final-glow"></div>
+    <div class="big-heart">❤️</div>
+    <p class="eyebrow">The end? Never.</p>
+    <h1>You're my favorite <span>chapter.</span></h1>
+    <p class="sub">Thank you for being part of my little world.</p>
+    <div class="final-actions">
+      <button class="primary-btn" id="replay">Replay our story ↻</button>
+      <button class="ghost-btn" id="burst">Make it rain hearts 💕</button>
+    </div>
+  </section>
+
+  <audio id="music" loop preload="auto">
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
